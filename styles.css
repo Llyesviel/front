@@ -1,0 +1,281 @@
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.max-width-100 {
+    max-width: 600px;
+}
+
+header {
+    font-family: Georgia, serif;
+}
+
+body {
+    font-family: Georgia, serif;
+}
+
+footer {
+    font-family: Georgia, serif;
+}
+
+.lectures {
+    font-family: Georgia, serif;
+}
+
+.practices {
+    font-family: Georgia, serif;
+}
+
+.nav-buttons-wrapper {
+    background-color: #c49beb;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; 
+    width: fit-content; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #3a0059; 
+    background-color: #ffffff;
+    border: 2px solid #3a0059;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 0 8px; 
+    transition: all 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #2b093d;
+    background-color: rgba(200, 200, 255, 0.6);
+    border-color: #2b093d;
+    transform: translateY(-10px) scale(1.05);
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+    color: #1c0d29;
+    background-color: rgba(200, 200, 255, 0.4);
+    border-color: #1c0d29;
+    transform: translateY(0) scale(1);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.card-header {
+    color: #3a0059;
+}
+
+.card-body .text-decoration-none {
+    font-family: Georgia, serif;
+    transition: 0.3s ease;
+    color: #3a0059;
+}
+
+.card-body .text-decoration-none:hover {
+   color: #9238c2;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 600px; 
+    height: 315px; 
+    border: 5px solid #3a0059;
+    border-radius: 10px;
+}
+
+.card.product-card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.card.product-card:active {
+    transform: translateY(0);
+}
+
+.btn-order {
+    background-color: #6313ad !important;
+    border-color: #6313ad !important;
+    color: #fff;
+}
+
+.btn-order:hover {
+    background-color: #9238c2 !important;
+    border-color: #9238c2 !important;
+}
+
+.btn-order:active {
+    background-color: #6313ad !important;
+    border-color: #6313ad !important;
+}
+
+.card.product-card .card-img-top {
+    object-fit: contain;
+    height: 180px;
+}
+
+#service-form .btn-primary {
+    background-color: #6313ad ;
+    border-color: #6313ad;
+    color: #fff;
+}
+
+#service-form .btn-primary:hover {
+    background-color: #6e3d94 ;
+    border-color: #6e3d94 ;
+}
+
+#service-form input:focus,
+#service-form select:focus,
+#service-form textarea:focus {
+    outline: 2px solid #3a0059;
+}
+
+.bg-pink {
+    background-color: #c49beb; 
+}
+
+.navbar {
+    padding: 0.5rem 0; 
+}
+
+.max-width-100 {
+    max-width: 600px;
+}
+
+.text {
+    margin-left: 1rem; 
+}
+
+.table thead th {
+    background-color: #2f0259 !important;
+    color: white !important;
+}
+
+.table-hover tbody tr:nth-child(even) td {
+    background-color: #f2f2f2 !important;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: #efdeff !important;
+}
+
+.form-check-input {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: #2f0259 !important;
+    border: 2px solid #2f0259 !important;
+    border-radius: 4px !important;
+}
+
+.form-check-input:checked {
+    background-color: #2f0259 !important;
+    border-color: #2f0259 !important;
+    color: #c49beb !important;
+}
+
+.form-check-input:checked::before {
+    color: #c49beb !important;
+    background-color: transparent !important;
+}
+
+.accordion-button {
+    background-color: #2f0259 !important;
+    color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2f0259 !important;
+    color: white !important;
+}
+
+.accordion-body {
+    color: black !important;
+}
+
+.accordion-button::after {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.accordion-button.collapsed::after {
+    color: white !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: #6e3d94 !important; 
+}
+
+.accordion-body {
+    white-space: pre-line; 
+}
+
+.accordion-body .fish-line {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.btn-primary {
+    background-color: #6313ad 
+}
+
+.btn-primary:hover {
+    background-color: #6e3d94 
+}
+
+.btn-primary:active {
+    background-color: #6313ad !important;  
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .max-width-100 {
+        max-width: 100%;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+ .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+ }
+
+ .carousel-caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    text-align: center;
+ }
+
+ .carousel-caption h5 {
+    font-weight: bold;
+    margin-bottom: 8px;
+ }
+
+ @media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        padding: 15px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+ }
