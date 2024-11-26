@@ -8,7 +8,7 @@ h2Element.style.color = "purple";
 
 // Изменение текста первого параграфа
 const firstParagraph = document.querySelector("p");
-firstParagraph.textContent = "Группа ЭФБО-05-23 (Новый текст)";
+firstParagraph.textContent = "Группа ЭФБО-05-23";
 
 // Скрытие первого видео
 const firstVideo = document.querySelector("iframe");

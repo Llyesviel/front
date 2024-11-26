@@ -362,7 +362,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0"><small>&copy; Денисова Юлия Константиновна, 2024</small></p>
+                    <p class="mb-0" style="text-align: right;"><small>&copy; Денисова Юлия Константиновна, 2024</small></p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="https://web.whatsapp.com/" class="me-3"><img class="rounded-circle" style="width: 40px; height: 40px;" src="https://sun9-33.userapi.com/impg/YNR2fI612cbBOz0JJwy_erHhs3sqhr_9qbpzgA/t8vLy3aREjQ.jpg?size=564x564&quality=96&sign=ebc69911ae3e8b693edb0d877f49aa39&type=album" alt="whatsapp"></a>
@@ -377,15 +377,15 @@
     <script src="script11.js"></script>
     <script src="script12.js"></script>
     <script>
-        // 13 тетрадь
-        
         // 1. Обработчик события click на заголовок H1
         document.querySelector('h1').addEventListener('click', () => {
             alert('Вы кликнули на заголовок - так держать!');
         });
-
+    
         // 2. Кнопка "Посмотреть практики 2 семестра"
         const practicesTable = document.querySelector('#practices table tbody');
+    
+        // Данные практик
         const secondSemesterPractices = [
             'Базовое бэкенд-приложение',
             'HTTP-запросы',
@@ -404,15 +404,36 @@
             'Тестирование и отладка приложений',
             'Защита проекта',
         ];
-
+    
+        const firstSemesterPractices = [
+            'Основы языка HTML',
+            'Формы и кнопки в HTML',
+            'Таблицы и интерактивные элементы HTML',
+            'Основы работы с CSS',
+            'Работа с классами в CSS',
+            'Работа с сетками и разметкой в HTML',
+            'Адаптивная вёрстка',
+            'Bootstrap',
+            'Основы языка JavaScript',
+            'Базовые задачи на JS',
+            'DOM-структура приложений и работа с объектами в языке JS',
+            'Встраивание скриптов',
+            'Отладка сценариев',
+            'Анимации и работа с ними',
+            'Github',
+            'Защита проекта',
+        ];
+    
         const switchButton = document.createElement('button');
         switchButton.textContent = 'Посмотреть практики второго семестра';
         switchButton.classList.add('btn', 'btn-primary', 'mb-3');
         document.querySelector('#practices').prepend(switchButton);
-
-        switchButton.addEventListener('click', () => {
+    
+        let isSecondSemester = false;
+    
+        const updateTable = (practices) => {
             practicesTable.innerHTML = '';
-            secondSemesterPractices.forEach((topic, index) => {
+            practices.forEach((topic, index) => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${index + 1}</td>
@@ -422,8 +443,22 @@
                 `;
                 practicesTable.appendChild(row);
             });
+        };
+    
+        switchButton.addEventListener('click', () => {
+            if (isSecondSemester) {
+                updateTable(firstSemesterPractices);
+                switchButton.textContent = 'Посмотреть практики второго семестра';
+            } else {
+                updateTable(secondSemesterPractices);
+                switchButton.textContent = 'Вернуть практики первого семестра';
+            }
+            isSecondSemester = !isSecondSemester;
         });
+    
+        updateTable(firstSemesterPractices);
     </script>
+    
     <script>
         // 14 тетрадь
 
@@ -455,19 +490,20 @@
         document.addEventListener("DOMContentLoaded", function () {
             const btn = document.getElementById("showLecturesBtn");
             const table = document.getElementById("lecturesTable");
-    
+
             btn.addEventListener("click", function () {
                 if (!table.classList.contains("show")) {
                     table.style.display = "block"; 
-                    setTimeout(() => table.classList.add("show"), 10); 
-                    btn.textContent = "Скрыть лекции";
+                    table.classList.add("show"); 
+                    btn.textContent = "Скрыть лекции"; 
                 } else {
                     table.classList.remove("show"); 
-                    setTimeout(() => (table.style.display = "none"), 500); 
+                    table.style.display = "none"; 
                     btn.textContent = "Показать лекции";
                 }
             });
         });
+
     </script>
     
 </body>
