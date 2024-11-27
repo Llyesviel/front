@@ -26,10 +26,18 @@ function processUtmTerm() {
     const params = new URLSearchParams(window.location.search);
     const utmTerm = params.get("utm_term");
     const h1Element = document.querySelector("h1");
+    
     if (h1Element) {
+        const infoText = document.createElement("span"); 
+        infoText.style.display = "block"; 
+        
         if (utmTerm) {
-            h1Element.textContent = utmTerm;
+            infoText.textContent = "UTM метка: " + utmTerm;
+        } else {
+            infoText.textContent = "Нет UTM меток";
         }
+        
+        h1Element.appendChild(infoText); 
     }
 }
 
