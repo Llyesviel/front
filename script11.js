@@ -11,10 +11,10 @@ const firstParagraph = document.querySelector("p");
 firstParagraph.textContent = "Группа ЭФБО-05-23";
 
 // Скрытие первого видео
-const firstVideo = document.querySelector("iframe");
-if (firstVideo) {
-  firstVideo.style.display = "none";
-} 
+//const firstVideo = document.querySelector("iframe");
+//if (firstVideo) {
+  //firstVideo.style.display = "none";
+//} 
 
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("orderForm");
